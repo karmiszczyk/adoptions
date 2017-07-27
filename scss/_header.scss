@@ -1,44 +1,75 @@
 @import "variables";
 
-.header {
-    width: 100%;
-    .nav{
-        overflow: hidden;
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        background-color: black;
-        z-index: 1;
-    }
+header {
+    background-image: url("../img/background-header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+
+    min-height: 100%;
+    
 }
 
-.logo {
+#banner{
+    height: 600px;
     display: flex;
-    flex-wrap: wrap;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    img {
+        display: block;
+    }
 }
 
 #cssmenu {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
     ul{
         list-style: none;
-        display: flex;
-        justify-content: flex-end;
+        
         li{
-            display: inline-block;
-            margin-left: 30px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+
+            margin-right: 30px;
+            display:inline-block;
+            padding: 10px 0 10px 0;
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(224,224,224,0.3);;
+            }
+
+            a {
+                color:white;
+                text-decoration: none;
+                text-shadow: 0px 2px 9px rgba(0, 0, 0, 0.8);
+            }
         }
     }
-
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    height: 95%;
+.original {
+    font-size: 33px;    
+    background-color: rgba(255,255,255,0.3);
+}
+
+.fixed {
+    font-size: 22px;
+    top: 0;
+    z-index: 100;
+    flex: 1 1 auto;
+    position: fixed;
     width: 100%;
-    padding-top: 5%;
+    background-color: rgba(60,120,79,0.9);
+}
+
+
+section{
+    position: relative;
+     min-height: 100%;
+    width: 100%;
     [class*=col-]{
       margin: 5px 0;
     }
