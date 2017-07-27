@@ -1,0 +1,23 @@
+#our-pupils{
+    background-image: url('../img/background-pupils.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-founder{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img{
+        width: 60%;
+        height: 70%;
+    }
+}
+
+.text{
+    display: block;
+    p {
+        font-size: 15px;
+      }
+}

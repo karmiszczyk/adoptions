@@ -1,0 +1,35 @@
+@import 'variables';
+
+.container {
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+
+    .row {
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        [class*='col-'] {
+            min-height: 1px;
+            float: left;
+            padding: 10px;
+            word-wrap: break-word;
+        }
+        @for $i from 1 through $columns {
+            .col-#{$i} {
+                width: $base-width * $i;
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
