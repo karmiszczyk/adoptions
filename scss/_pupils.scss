@@ -1,9 +1,11 @@
 @import 'variables';
 
 #our-pupils{
-    background-image:url('../img/background-pupils.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:url('../img/background.png');
+    h1{
+        text-shadow: $fontHeaderShadow;
+        text-align: center;
+    }
 
 
     .photo{

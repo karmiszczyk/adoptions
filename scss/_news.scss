@@ -1,8 +1,11 @@
 #news {
-    background-image: url("../img/background-news.jpg");
-    background-size: cover;
+    background-image:url('../img/background.png');
+    // background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    h1{
+        text-align: center;
+        text-shadow: $fontHeaderShadow
+    }
 }
 
 .single-news {
