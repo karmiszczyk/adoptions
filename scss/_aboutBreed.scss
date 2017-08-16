@@ -1,0 +1,13 @@
+@import 'variables';
+
+.aboutBreed-header{
+    h1{
+        text-align: center;
+        font-size: $fontSizeAllHeaders;
+    }
+}
+.aboutBreed-text{
+    p{
+        font-size: 19px;
+    }
+}
